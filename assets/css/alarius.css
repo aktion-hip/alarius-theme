@@ -1,0 +1,37 @@
+#menu .wp-block-navigation li.wp-block-navigation-item:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+#menu .wp-block-navigation .wp-block-navigation-item {
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+    width: 100%;
+}
+
+#menu .wp-block-navigation .wp-block-navigation-item>a {
+    width: 100%;
+}
+
+#menu .wp-block-navigation .wp-block-navigation-item>button {
+    width: 100%;
+    box-shadow: none;
+}
+
+#menu .wp-block-navigation .wp-block-navigation-item>button>span {
+    color: initial;
+}
+
+#menu .wp-block-navigation .wp-block-navigation-item.has-child ul.wp-block-navigation__submenu {
+    width: 100%;
+}
+
+#menu .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 2em;
+}
