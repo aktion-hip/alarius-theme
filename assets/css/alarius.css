@@ -1,3 +1,7 @@
+#menu .wp-block-navigation {
+    width: 100%;
+}
+
 #menu .wp-block-navigation li.wp-block-navigation-item:first-child {
     border-top: 0;
     margin-top: 0;
@@ -10,6 +14,32 @@
     margin: 0.5em 0 0 0;
     padding: 0.5em 0 0 0;
     width: 100%;
+    display: initial;
+}
+
+#menu ul li ul.wp-block-navigation-submenu {
+    color: #9fa3a6;
+    display: none;
+    margin: 0.5em 0 1.5em 0;
+    padding-left: 1em;
+}
+
+#menu .alarius-submenu {
+    width: inherit;
+}
+
+#menu .wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+    height: initial;
+    width: inherit;
+    z-index: auto;
+    position: sticky;
+    visibility: visible;
+}
+
+#menu .wp-block-navigation .has-child .wp-block-navigation__submenu-container li.wp-block-navigation-item {
+    z-index: auto;
+    position: sticky;
+    visibility: visible;
 }
 
 #menu .wp-block-navigation .wp-block-navigation-item>a {
@@ -34,4 +64,8 @@
     background-color: transparent;
     border: none;
     padding-left: 2em;
+}
+
+#sidebar #menu .wp-block-navigation__responsive-container {
+    display: block;
 }

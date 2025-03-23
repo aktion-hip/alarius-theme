@@ -39,7 +39,7 @@ function alarius_styles() {
     );
 
     wp_register_script(
-        'alarius-style',
+        'main',
         get_template_directory_uri() . '/assets/js/main.js',
         array(), $version_string, true
     );
@@ -68,13 +68,20 @@ function alarius_styles() {
         array(), $version_string, true
     );
 
+    wp_register_script(
+        'alarius',
+        get_template_directory_uri() . '/assets/js/alarius.js',
+        array(), $version_string, true
+    );
+
     // Enqueue theme stylesheet.
     wp_enqueue_style('alarius-style');
     wp_enqueue_script('browser');
     wp_enqueue_script('breakpoints');
     wp_enqueue_script('jquery');
     wp_enqueue_script('util');
-    wp_enqueue_script('alarius-style');
+    wp_enqueue_script('main');
+    wp_enqueue_script('alarius');
 
     // Design: HTML5 UP
     wp_enqueue_style(

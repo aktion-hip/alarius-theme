@@ -9,7 +9,7 @@ $url_facebook = get_option( 'alarius_facebook_path', '' );
 $url_instagram = get_option( 'alarius_instagram_path', '' );
 ?>
 <header id="header">
-    <a href="index.html" class="logo"><strong>Alarius</strong></a>
+    <a href="/" class="logo"><strong>Alarius</strong></a>
     <ul class="icons">
         <!-- 
             <li><a href="#" class="icon fa-brands fa-x-twitter"><span class="label">X</span></a></li>
